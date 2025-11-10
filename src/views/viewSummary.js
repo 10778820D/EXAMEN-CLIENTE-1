@@ -38,6 +38,8 @@ export function viewSummary() {
     // button exit code ...
     localStorage.setItem("user", "");
     localStorage.setItem("pass", "");
+    localStorage.removeItem("user");
+    localStorage.removeItem("pass");
     render(viewWelcome);
   });
 }
